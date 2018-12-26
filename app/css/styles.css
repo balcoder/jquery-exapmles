@@ -1,2 +1,18 @@
 .intro {
   background: teal; }
+
+.ptb-40 {
+  padding: 40px 0; }
+
+.table-style {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%; }
+
+.zebra {
+  background-color: #dddfff;
+  color: #666666; }
+
+tr.zebraHover {
+  border: 5px solid #FFFACD;
+  background-color: #000; }
