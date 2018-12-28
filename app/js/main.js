@@ -27,12 +27,17 @@ $('h2#text-replaced').text('<strong>Warning!</strong> Title elements can be …'
     $('#disclaimer').slideToggle(1000, function() {
       alert('The toggle effect has finished')
     });
-
     if($('#disclaimer').is(':visible')) {
-      $(this).val('Hide Disclamer')
+      $('#toggleButton').val('Show Disclamer')
     } else {
-      $(this).val('Show Disclamer')
+      $('#toggleButton').val('Hide Disclamer')
     }
+    $('#disclaimer').animate({
+      opacity: 'hide',
+      height: 'hide'
+    }, 'slow');
+
+
   });
 
   // add mouseover functionality to table
@@ -61,6 +66,20 @@ $('h2#text-replaced').text('<strong>Warning!</strong> Title elements can be …'
     $(this).hide();
     $(this).next().fadeIn();
   });
+
+  $('p').animate({
+    padding: '20px',
+    fontSize: '30px'
+  }, 2000);
+
+  //navigation hover effect
+  $('#navigation li').hover(function() {
+    $(this).animate({paddingLeft: '+=15px', fontSize: '+=5px'}, 200);
+  }, function() {
+    $(this).animate({paddingLeft: '-=15px', fontSize: '-=5px'}, 200);
+  });
+
+
 
 
 

@@ -26,5 +26,7 @@
     "autoprefixer": "^9.0.2",
     "gulp-postcss": "^7.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jquery-color-animation": "^1.5.1"
+  }
 }
